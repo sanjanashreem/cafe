@@ -1,0 +1,228 @@
+/* General Resets */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: sans-serif;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgb(85, 16, 16);
+}
+
+.navbar-brand {
+    color: bisque;
+    font-size: 2em;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(224, 192, 143);
+    font-size: 1.2em;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+/* Home Section */
+#Home {
+    text-align: center;
+    padding: 80px 0;
+    background-color:dimgray;  /* Adds a slight overlay for text contrast */
+}
+
+#Home h3 {
+    color: rgba(90, 9, 9, 0.634);
+    font-style: italic;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#Home p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+#Home h4 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+#Home button {
+    color: #e8cfa9;
+    background-color: brown;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+/* About Us Section */
+#AboutUs {
+    background-color:#e8cfa9;
+    padding-top: 60px;
+}
+#AboutUs h1{
+    color: brown;
+}
+.About-Content {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-Content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.About-text p {
+    font-size: 1.5em;
+    text-align: justify;
+    flex: 1;
+}
+
+/* Services Section */
+#Services {
+    background-color:#e8cfa9;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+#Services h1{
+    color: brown;
+}
+.services-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #e8cfa9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    color: rgb(101, 32, 32);
+    font-size: 1.5em;
+}
+
+/* Contact Us Section */
+#ContactUs {
+    background-color: rgb(114, 40, 40);
+    padding: 40px 0;
+    text-align: center;
+}
+
+#ContactUs h1 {
+    margin-bottom: 20px;
+    color: bisque;
+}
+
+#ContactUs p {
+    font-size: 1em;
+    color: beige;
+    margin-bottom: 10px;
+}
+
+#ContactUs a {
+    color: beige;
+    text-decoration: none;
+}
+
+.media a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.media img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.media img:hover {
+    transform: scale(1.1);
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .About-Content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .About-text p {
+        margin: 20px;
+        order: 1;
+    }
+
+    .About-Content img {
+        order: 2;
+    }
+
+    .services-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.1em;
+    }
+
+    /* Home Section */
+    #Home {
+        padding: 60px 20px;
+    }
+
+    #Home h3 {
+        font-size: 1.4em;
+    }
+
+    #Home p {
+        font-size: 1.1em;
+    }
+
+    #Home button {
+        padding: 12px 20px;
+    }
+}
